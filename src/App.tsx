@@ -1,5 +1,12 @@
+import { Main } from './components/Main/Main';
+import { TodoProvider } from './context';
+
 const App = () => {
-  return <div className="App">Hello world</div>;
-}
+  return (
+    <TodoProvider>
+      <Main />
+    </TodoProvider>
+  );
+};
 
 export default App;
